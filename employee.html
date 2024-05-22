@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leave Request</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Leave Request</h1>
+        <form id="leave-form" action="submit_success.html">
+            <label for="employee-name">Name:</label>
+            <input type="text" id="employee-name" name="employee-name" required>
+            
+            <label for="leave-type">Leave Type:</label>
+            <select id="leave-type" name="leave-type" required>
+                <option value="sick">Sick Leave</option>
+                <option value="casual">Casual Leave</option>
+                <option value="vacation">Vacation Leave</option>
+            </select>
+            
+            <label for="leave-start">Start Date:</label>
+            <input type="date" id="leave-start" name="leave-start" required>
+            
+            <label for="leave-end">End Date:</label>
+            <input type="date" id="leave-end" name="leave-end" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
